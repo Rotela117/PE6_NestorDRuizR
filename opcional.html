@@ -22,21 +22,48 @@
 
 <main class="opcional-container">
 
-    <h2>GIF Animado Interactivo</h2>
+    <h2>Video en Bucle Interactivo</h2>
 
     <div class="gif-card">
-        <img src="https://i.imgur.com/0RzvXnC.gif" alt="GIF Animado" id="gifAnimado">
-        <p>Este GIF muestra un efecto visual divertido y llamativo.</p>
+        <iframe id="gifVideo" width="100%" height="360"
+            src="https://www.youtube.com/embed/06jCWlTzQYQ?autoplay=1&loop=1&playlist=06jCWlTzQYQ"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+        <p>Este Short muestra al gatito viral en reproducción continua.</p>
 
         <div class="gif-controls">
             <button id="pausarGif" class="btn azul">Pausar</button>
             <button id="reproducirGif" class="btn azul">Reproducir</button>
-            <a href="https://i.imgur.com/0RzvXnC.gif" download class="btn azul">Descargar</a>
         </div>
     </div>
 
 </main>
 
-<script src="js/script.js"></script>
+<script>
+const iframe = document.getElementById("gifVideo");
+const pausarBtn = document.getElementById("pausarGif");
+const reproducirBtn = document.getElementById("reproducirGif");
+
+let player;
+
+// Cargar la API de YouTube
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('gifVideo');
+}
+
+let tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+document.body.appendChild(tag);
+
+// Botones de control
+pausarBtn.addEventListener("click", () => {
+    if(player) player.pauseVideo();
+});
+
+reproducirBtn.addEventListener("click", () => {
+    if(player) player.playVideo();
+});
+</script>
+
 </body>
 </html>
