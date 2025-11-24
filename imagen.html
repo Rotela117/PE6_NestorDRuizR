@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="titulo">📷 Galería de Imágenes</h1>
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="imagen.html">Imágenes</a>
+        <a href="audio.html">Audios</a>
+        <a href="video.html">Videos</a>
+        <a href="contenido.html">Contenido Embebido</a>
+        <a href="opcional.html">Opcional</a>
+    </nav>
+</header>
+
+<main class="contenedor-imagenes">
+    <div class="img-card">
+        <img src="https://www.antartica.cl/media/catalog/product/9/7/9789566146124_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" class="imagen" alt="Los Juegos del Hambre">
+        <h3>Los Juegos del Hambre</h3>
+        <a href="https://www.antartica.cl/media/catalog/product/9/7/9789566146124_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" download class="btn azul">Descargar</a>
+    </div>
+
+    <div class="img-card">
+        <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/89/52/8952dc0d2a18c1033b16227fd3edeb6a.jpg" class="imagen" alt="En Llamas">
+        <h3>En Llamas</h3>
+        <a href="https://images.cdn1.buscalibre.com/fit-in/360x360/89/52/8952dc0d2a18c1033b16227fd3edeb6a.jpg" download class="btn azul">Descargar</a>
+    </div>
+
+    <div class="img-card">
+        <img src="https://www.antartica.cl/media/catalog/product/9/7/9789566146346_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" class="imagen" alt="Sinsajo Parte 1">
+        <h3>Sinsajo Parte 1</h3>
+        <a href="https://www.antartica.cl/media/catalog/product/9/7/9789566146346_1.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" download class="btn azul">Descargar</a>
+    </div>
+
+    <div class="img-card">
+        <img src="https://m.media-amazon.com/images/I/716eRu1gF8L._SY342_.jpg" class="imagen" alt="Sinsajo Parte 2">
+        <h3>Sinsajo Parte 2</h3>
+        <a href="https://m.media-amazon.com/images/I/716eRu1gF8L._SY342_.jpg" download class="btn azul">Descargar</a>
+    </div>
+</main>
+
+<!-- Modal para ampliar imágenes -->
+<div id="modal" class="modal">
+    <span id="cerrarModal" class="cerrar">&times;</span>
+    <img id="imgModal" class="modal-contenido">
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

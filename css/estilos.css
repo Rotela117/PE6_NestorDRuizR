@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    border-bottom: 3px solid #e50914;
+}
+
+.titulo {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #e50914;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.menu a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid #e50914;
+}
+
+.contenedor-cartelera {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.poster {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 330px;
+    object-fit: cover;
+}
+
+.card h2 {
+    color: #e50914;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: #e50914;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #b00710;
+}
+
+
+
+/** imagen css */
+
+/* --- PALLETA AZULADA --- */
+:root {
+    --azul-principal: #0b3d91;
+    --azul-oscuro: #06285f;
+    --azul-claro: #4da3ff;
+    --fondo: #0a0f1f;
+}
+
+/* Fondo general */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--fondo);
+    color: #fff;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px;
+    background: var(--azul-oscuro);
+    border-bottom: 3px solid var(--azul-claro);
+}
+
+.titulo {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--azul-claro);
+}
+
+/* Menú */
+.menu a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid var(--azul-claro);
+}
+
+/* --- GALERÍA --- */
+.contenedor-imagenes {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.img-card {
+    background: var(--azul-oscuro);
+    padding-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.img-card:hover {
+    transform: scale(1.05);
+}
+
+.img-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.btn.azul {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: var(--azul-claro);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn.azul:hover {
+    background: #1a73e8;
+}
+
+/* --- MODAL --- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-contenido {
+    display: block;
+    margin: auto;
+    max-width: 85%;
+}
+
+.cerrar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+/* audio */
+
+/* CONTENEDOR PRINCIPAL */
+.audio-container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 35px;
+}
+
+/* TARJETAS DE AUDIO */
+.audio-card {
+    background: var(--azul-oscuro);
+    border-radius: 12px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 40, .6);
+    transition: .3s;
+}
+
+.audio-card:hover {
+    transform: scale(1.05);
+}
+
+.audio-cover {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+/* CONTROLES */
+.player-controls {
+    margin-top: 15px;
+}
+
+.play-btn, .pause-btn {
+    background: var(--azul-claro);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.play-btn:hover, .pause-btn:hover {
+    background: #1a73e8;
+}
+  /* video */ 
+
+  /* GRID DE VIDEOS */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.video-card {
+    background: var(--azul-oscuro);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,40,.5);
+    text-align: center;
+}
+
+.video-card h3 {
+    color: var(--azul-claro);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.video-card iframe {
+    border-radius: 8px;
+}
+
+
+
+.thumb {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+/* REPRODUCTOR PRINCIPAL */
+.visor-container {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 900px;
+    background: var(--azul-oscuro);
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,60,.6);
+}
+
+.visor-container h2 {
+    color: var(--azul-claro);
+    margin-bottom: 15px;
+}
+
+#visorPrincipal {
+    width: 100%;
+    max-height: 480px;
+    border-radius: 10px;
+    background: black;
+}
+
+
+
+/* Mapa */ 
+
+.map-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    background: var(--azul-oscuro);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,60,.6);
+}
+
+.map-container h2 {
+    color: var(--azul-claro);
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+
+
+/* opcional */ 
+.opcional-container {
+    width: 90%;
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+    background: var(--azul-oscuro);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,60,.6);
+}
+
+.opcional-container h2 {
+    color: var(--azul-claro);
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+.gif-card img {
+    width: 100%;
+    max-height: 350px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.gif-controls {
+    margin-top: 10px;
+}
+
